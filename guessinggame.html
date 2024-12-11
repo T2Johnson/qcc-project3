@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game App</title>
+    <link rel="stylesheet" href="guessinggame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guess the Mystery Number!</h1>
+        <p>I'm thinking of a number between <strong>1 and 100.</strong></p>
+        <p>Can you guess it before your score hits 0?</p>
+        <p class="secret-number hidden" id="secret"></p>
+        <input type="number" id="guess" placeholder="Enter your guess here..." min="1" max="100">
+        <div>
+            <button id="check">Check</button>
+            <button id="reset">Play Again</button>
+        </div>
+        <p id="message">Good luck and have fun!</p>
+        <p>Current Score: <span id="score">10</span></p>
+        <p>High Score: <span id="high-score">0</span></p>
+    </div>
+
+    <script src="guessinggame.js"></script>
+</body>
+</html>
+
